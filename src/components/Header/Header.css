@@ -1,0 +1,211 @@
+.Navbar-container {
+    width: 100%;
+    min-height: 10vh;
+    background: #E2E3E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.navbar-left {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #464647;
+    display: flex;
+}
+
+.navbar-left > h2{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left >h2:hover {
+    color: #E2B46D;
+}
+
+.navbar-left > h2 > img {
+    width: 150px;
+}
+
+
+.navbar-left > h3{
+    display: none;
+}
+.navbar-right {
+    flex: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    display: flex;
+}
+.navbar-right > ul{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #464647;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.navbar-right > ul > li {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.navbar-right > ul > li:hover {
+    color: #E2B46D;
+}
+
+
+.navbar-right > ul > li:not(:last-child){
+    margin-right: 40px;
+}
+
+.navbar-right > ul > li >img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: auto;
+}
+.navbar-right > ul > li >a:hover{
+    color: #848484;
+    transition: 0.3s;
+}
+
+
+.show-menu {
+    display: none;
+}
+.nav__black {
+    background-color: #E2B46D;
+    width: 100%;
+    min-height: 10vh;
+    background: #F5F5F5;
+    background-image: linear-gradient(to bottom, #F1F1F1 10%, #E2E3E5 90%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    position: fixed;
+}
+.nav__black ul > li{
+    color: #eb819f;
+    color: #464647;
+}
+
+.mimo {
+    color: #E2B46D;
+}
+
+@media screen and (max-width: 960px) {
+    .Navbar-container {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-left {
+        width: 100%;
+        min-height: 10vh;
+        font-size: 20px;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+    }
+    .navbar-left >h2 {
+        margin-right: 40px;
+    }
+    .navbar-left > h3{
+        display: block;
+        margin: auto 0;
+        display: flex;
+        align-items: center;
+    }
+    .navbar-right {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #464647;
+        display: flex;
+        flex-direction: column;
+        background-image: radial-gradient(#F1F1F1 10%, #E2E3E5 40%);
+        transform: translateX(-100%);
+    }
+    .show-menu {
+        display: block;
+        transform: translateX(0%);
+        width: 100%;
+        min-height: 90vh;
+        top: 10vh;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #464647;
+        display: flex;
+        flex-direction: column;
+        background-image: radial-gradient(#F1F1F1 10%, #E2E3E5 40%);
+        z-index: 2;
+    }
+    .show-menu > ul{
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .show-menu > ul >li:first-child{
+        margin-top: 40px;
+    }
+    .show-menu > ul >li {
+        margin-bottom: 40px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .show-menu > ul >li > img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .navbar-right > ul{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #464647;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        list-style-type: none;
+        width: 100%;
+    }
+    .navbar-right > ul > li{
+        width: 100%;
+    }
+    .navbar-right > ul > li:not(:last-child){
+        margin-right: 0px;
+    }
+}

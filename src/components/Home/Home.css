@@ -1,0 +1,11 @@
+.home_container {
+    width: 100%;
+    min-height: 90vh;
+}
+
+.home_container > button {
+    background-color: coral;
+    color: white;
+    margin: 20px;
+}
+
